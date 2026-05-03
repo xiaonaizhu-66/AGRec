@@ -1,13 +1,3 @@
-"""
-传统基线 + L_orth 消融 (GPU)
-==============================
-Part A: SASRec, Bert4Rec, GRU4Rec (RecBole 框架)
-Part B: L_orth 消融 (有/无正交损失的 Router)
-
-预计: Part A ~3h, Part B ~40min, 总计 ~4h
-先装 RecBole: pip install recbole
-"""
-
 import os, sys, time, json
 import pandas as pd
 import numpy as np
