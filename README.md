@@ -14,7 +14,7 @@ AGRec consistently outperforms strong baselines (such as RecGPT and LLM2Rec) acr
 Our experiments were conducted using **PyTorch 2.9.1** on an **NVIDIA RTX 5090 GPU**.
 ```bash
 pip install -r requirements.txt
-
+```
 📂 Datasets & Weights
 Due to file size limits, large assets are managed as follows:
 
@@ -29,5 +29,19 @@ Interaction Data,python process_data.py
 Metadata,python process_meta.py
 2. Model Training & Evaluation
 To run the core AGRec framework:
+```bash
 python run_model.py
-[!IMPORTANT]If you are running in a custom environment, ensure the following parameters are correctly set in your configuration:output_dir: Path to save checkpoints (seeds and samples are auto-appended).orth_loss: Weight for the orthogonality loss $\mathcal{L}_{orth}$.3. Benchmarking & AnalysisScripts for reproducibility and further analysis:Baselines: python run_baseline_BPR.pyPerformance Testing: python test_agrec.pyStatistical Significance: python agrec_statistical_tests.pyAblation Studies: python ablation.py
+```
+[!IMPORTANT]If you are running in a custom environment, ensure the following parameters are correctly set in your configuration:output_dir: Path to save checkpoints (seeds and samples are auto-appended).orth_loss: Weight for the orthogonality loss $\mathcal{L}_{orth}$.
+
+### 3. Benchmarking & Analysis
+Scripts for reproducibility and further analysis:
+
+*   **Baselines:** 
+    `python run_baseline_BPR.py`
+*   **Performance Testing:** 
+    `python test_agrec.py`
+*   **Statistical Significance:** 
+    `python agrec_statistical_tests.py`
+*   **Ablation Studies:** 
+    `python ablation.py`
