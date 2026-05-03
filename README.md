@@ -7,15 +7,15 @@ Weights: The pre-trained model for Steam is available as step9_steam_agrec_pro.p
 Datasets: Raw data (e.g., amazon_baby_inter) should be placed in the root or specified data directory.
 
 We provide scripts to process interaction data and metadata:
-# To process interaction data
-python process_data.py 
-# To process metadata
-python process_meta.py
-# Run baselines 
-python baseline.py
-# Performance testing
-python test_agrec.py
-# Statistical significance tests
-python agrec_statistical_tests.py
-# Ablation studies
-python ablation.py
+To process interaction data
+        python process_data.py 
+To process metadata
+        python process_meta.py
+Run baselines 
+        python baseline.py
+Performance testing
+        python test_agrec.py
+Statistical significance tests
+        python agrec_statistical_tests.py
+Ablation studies
+        python ablation.py
